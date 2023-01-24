@@ -165,10 +165,9 @@
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2023 <a href="#">AdminLTE.io</a>.</strong>
-    All rights reserved.
+    Created by <strong>Adji Muhamad Zidan</strong> - 2023.
     <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.2.0
+      <b><a href="#">AdminLTE.io</a> - Version</b> 3.2.0
     </div>
   </footer>
 
