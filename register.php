@@ -1,5 +1,11 @@
 <?php  
   require 'config/koneksi_db.php';
+  session_start();
+
+  if (isset($_SESSION['masuk'])) {
+    header('Location: login.php');
+    exit;
+  }
 
   if (isset($_POST['register'])) {
     $username = htmlspecialchars(stripcslashes($_POST['user']));

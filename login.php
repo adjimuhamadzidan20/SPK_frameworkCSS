@@ -39,8 +39,8 @@
       // checkbox remember me
       if (isset($_POST['remember'])) {
         // set cookie
-        setcookie('ID', hash('sha256', $data['ID'], time()+60));
-        setcookie('Key', hash('sha256', $data['username'], time()+60));
+        setcookie('ID', hash('sha256', $data['ID']), time()+60);
+        setcookie('Key', hash('sha256', $data['username']), time()+60);
       }
 
       header('Location: index.php');
