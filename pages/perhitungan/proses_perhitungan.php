@@ -176,15 +176,9 @@
               alert('Tidak Bisa Mereset, Karena Tidak Ada Data Satupun');
            </script>";
     } else {
-      $resetAlter = "TRUNCATE TABLE data_alternatif";
-      $resetKrite = "TRUNCATE TABLE data_kriteria";
-      $resetPen = "TRUNCATE TABLE data_penilaian";
       $resetNorm = "TRUNCATE TABLE hasil_normalisasi";
       $resetPref = "TRUNCATE TABLE hasil_preferensi";
 
-      mysqli_query($koneksi, $resetAlter);
-      mysqli_query($koneksi, $resetKrite);
-      mysqli_query($koneksi, $resetPen);
       mysqli_query($koneksi, $resetNorm);
       mysqli_query($koneksi, $resetPref);
 

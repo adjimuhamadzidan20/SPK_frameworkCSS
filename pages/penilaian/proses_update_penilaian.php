@@ -65,7 +65,7 @@
               <h5 class="font-weight-bold">Penilaian</h5>
             </div>
           </div>
-          <div class="row mb-3">
+          <div class="row mb-3" hidden="hidden">
             <div class="col-md-6">   
               <label>ID Penilaian</label>
             </div>

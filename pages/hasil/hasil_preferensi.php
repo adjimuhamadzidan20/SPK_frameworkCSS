@@ -29,42 +29,44 @@
           <div class="card-body">
             <div class="row">
               <div class="col">
-                <table class="table table-bordered" id="example2">
-                  <thead>
-                    <tr class="text-center">
-                      <th>Urutan</th>
-                      <th>Alternatif</th>
-                      <th>K1</th>
-                      <th>K2</th>
-                      <th>K3</th>
-                      <th>K4</th>
-                      <th>K5</th>
-                      <th>K6</th>
-                      <th>Total</th>
-                    </tr>
-                  </thead>
-                  <tbody class="text-center">  
-                    <?php
-                      $no = 1;  
-                      foreach ($hasilPreferensi as $data) {
-                    ?>
-                      <tr>
-                        <td><?= $no; ?></td>
-                        <td><?= $data['Nama_Framework'];?></td>
-                        <td><?= $data['K1'];?></td>
-                        <td><?= $data['K2'];?></td>
-                        <td><?= $data['K3'];?></td>
-                        <td><?= $data['K4'];?></td>
-                        <td><?= $data['K5'];?></td>
-                        <td><?= $data['K6'];?></td>
-                        <td><?= $data['Total'];?></td>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr class="text-center">
+                        <th class="text-nowrap">Peringkat</th>
+                        <th class="text-nowrap">Alternatif</th>
+                        <th class="text-nowrap">K1</th>
+                        <th class="text-nowrap">K2</th>
+                        <th class="text-nowrap">K3</th>
+                        <th class="text-nowrap">K4</th>
+                        <th class="text-nowrap">K5</th>
+                        <th class="text-nowrap">K6</th>
+                        <th class="text-nowrap">Total</th>
                       </tr>
-                    <?php  
-                      $no++;
-                      }
-                    ?>
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody class="text-center">  
+                      <?php
+                        $no = 1;  
+                        foreach ($hasilPreferensi as $data) {
+                      ?>
+                        <tr>
+                          <td class="text-nowrap"><?= $no; ?></td>
+                          <td class="text-nowrap"><?= $data['Nama_Framework'];?></td>
+                          <td class="text-nowrap"><?= $data['K1'];?></td>
+                          <td class="text-nowrap"><?= $data['K2'];?></td>
+                          <td class="text-nowrap"><?= $data['K3'];?></td>
+                          <td class="text-nowrap"><?= $data['K4'];?></td>
+                          <td class="text-nowrap"><?= $data['K5'];?></td>
+                          <td class="text-nowrap"><?= $data['K6'];?></td>
+                          <td class="text-nowrap"><?= $data['Total'];?></td>
+                        </tr>
+                      <?php  
+                        $no++;
+                        }
+                      ?>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
             <div class="row text-right mt-3">

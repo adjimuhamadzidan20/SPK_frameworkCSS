@@ -150,44 +150,44 @@
         <div class="card">
           <!-- /.card-header -->
           <div class="card-body">
-            <table class="table table-bordered" id="example2">
-              <thead>
-                <tr class="text-center">
-                  <th>ID</th>
-                  <th>K1</th>
-                  <th>K2</th>
-                  <th>K3</th>
-                  <th>K4</th>
-                  <th>K5</th>
-                  <th>K6</th>
-                  <th>Opsi</th>
-                </tr>
-              </thead>
-              <tbody>
-                <?php  
-                  foreach ($hasil as $items) {
-                ?>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
                   <tr class="text-center">
-                    <td><?= $items['ID_Kriteria']; ?></td>
-                    <td><?= $items['Mudah_Dipelajari']; ?></td>
-                    <td><?= $items['Banyak_Digunakan']; ?></td>
-                    <td><?= $items['Popular']; ?></td>
-                    <td><?= $items['Sumber_Belajar_Luas']; ?></td>
-                    <td><?= $items['Ringan_Digunakan']; ?></td>
-                    <td><?= $items['Proses_Instalasi_Mudah']; ?></td>
-                    <td>
-                      <center>
-                        <a href="index.php?page=delete_kriteria&id=<?= $items['ID_Kriteria']; ?>">
-                          <button type="button" class="btn btn-primary" onclick="return confirm('Hapus nilai bobot?');"><i class="far fa-trash-alt"></i> Delete</button>
-                        </a>
-                      </center>
-                    </td>
+                    <th class="text-nowrap">K1</th>
+                    <th class="text-nowrap">K2</th>
+                    <th class="text-nowrap">K3</th>
+                    <th class="text-nowrap">K4</th>
+                    <th class="text-nowrap">K5</th>
+                    <th class="text-nowrap">K6</th>
+                    <th class="text-nowrap">Opsi</th>
                   </tr>
-                <?php  
-                  }
-                ?>
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  <?php  
+                    foreach ($hasil as $items) {
+                  ?>
+                    <tr class="text-center">
+                      <td class="text-nowrap"><?= $items['Mudah_Dipelajari']; ?></td>
+                      <td class="text-nowrap"><?= $items['Banyak_Digunakan']; ?></td>
+                      <td class="text-nowrap"><?= $items['Popular']; ?></td>
+                      <td class="text-nowrap"><?= $items['Sumber_Belajar_Luas']; ?></td>
+                      <td class="text-nowrap"><?= $items['Ringan_Digunakan']; ?></td>
+                      <td class="text-nowrap"><?= $items['Proses_Instalasi_Mudah']; ?></td>
+                      <td class="text-nowrap">
+                        <center>
+                          <a href="index.php?page=delete_kriteria&id=<?= $items['ID_Kriteria']; ?>">
+                            <button type="button" class="btn btn-primary" onclick="return confirm('Hapus nilai bobot?');"><i class="far fa-trash-alt"></i> Delete</button>
+                          </a>
+                        </center>
+                      </td>
+                    </tr>
+                  <?php  
+                    }
+                  ?>
+                </tbody>
+              </table>
+            </div>
           </div>
           <!-- /.card-body -->
         </div>

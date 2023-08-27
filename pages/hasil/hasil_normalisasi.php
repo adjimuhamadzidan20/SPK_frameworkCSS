@@ -29,38 +29,40 @@
           <div class="card-body">
             <div class="row">
               <div class="col">
-                <table class="table table-bordered" id="example2">
-                  <thead>
-                    <tr class="text-center">
-                      <th>Kriteria</th>
-                      <th>Alternatif 1</th>
-                      <th>Alternatif 2</th>
-                      <th>Alternatif 3</th>
-                      <th>Alternatif 4</th>
-                      <th>Alternatif 5</th>
-                      <th>Alternatif 6</th>
-                    </tr>
-                  </thead>
-                  <tbody class="text-center">
-                    <?php  
-                      $no = 1;
-                      foreach ($hasilNormalisasi as $data) {
-                    ?>
-                      <tr>
-                        <td class="font-weight-bold">K<?= $no; ?></td>
-                        <td><?= $data['K1'];?></td>
-                        <td><?= $data['K2'];?></td>
-                        <td><?= $data['K3'];?></td>
-                        <td><?= $data['K4'];?></td>
-                        <td><?= $data['K5'];?></td>
-                        <td><?= $data['K6'];?></td>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr class="text-center">
+                        <th class="text-nowrap">Kriteria</th>
+                        <th class="text-nowrap">Alternatif 1</th>
+                        <th class="text-nowrap">Alternatif 2</th>
+                        <th class="text-nowrap">Alternatif 3</th>
+                        <th class="text-nowrap">Alternatif 4</th>
+                        <th class="text-nowrap">Alternatif 5</th>
+                        <th class="text-nowrap">Alternatif 6</th>
                       </tr>
-                    <?php 
-                        $no++; 
-                      }
-                    ?>
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody class="text-center">
+                      <?php  
+                        $no = 1;
+                        foreach ($hasilNormalisasi as $data) {
+                      ?>
+                        <tr>
+                          <td class="font-weight-bold text-nowrap">K<?= $no; ?></td>
+                          <td class="text-nowrap"><?= $data['K1'];?></td>
+                          <td class="text-nowrap"><?= $data['K2'];?></td>
+                          <td class="text-nowrap"><?= $data['K3'];?></td>
+                          <td class="text-nowrap"><?= $data['K4'];?></td>
+                          <td class="text-nowrap"><?= $data['K5'];?></td>
+                          <td class="text-nowrap"><?= $data['K6'];?></td>
+                        </tr>
+                      <?php 
+                          $no++; 
+                        }
+                      ?>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
             <div class="row text-right mt-3">

@@ -30,11 +30,11 @@
   <div class="container-fluid">
     <!-- Small boxes (Stat box) -->
     <div class="row">
-      <div class="col col-sm">
+      <div class="col-sm col-lg-4">
         <!-- small box -->
-        <div class="small-box" style="background-color: #0079FB;">
+        <div class="small-box" style="background-color: #0c2461">
           <div class="inner text-white">
-            <h3><?php echo $isiAlter[0]; ?> Data</h3>
+            <h4 class="font-weight-bold"><?php echo $isiAlter[0]; ?> Data</h4>
             <p>Alternatif</p>
           </div>
           <div class="icon">
@@ -44,11 +44,11 @@
         </div>
       </div>
       <!-- ./col -->
-      <div class="col col-sm">
+      <div class="col-sm col-lg-4">
         <!-- small box -->
-        <div class="small-box" style="background-color: #0079FB;">
+        <div class="small-box" style="background-color: #0c2461">
           <div class="inner text-white">
-            <h3><?php echo $isiKrite[0]; ?> Data</h3>
+            <h4 class="font-weight-bold"><?php echo $isiKrite[0]; ?> Data</h4>
             <p>Kriteria</p>
           </div>
           <div class="icon">
@@ -58,11 +58,11 @@
         </div>
       </div>
       <!-- ./col -->
-      <div class="col col-sm">
+      <div class="col-sm col-lg-4">
         <!-- small box -->
-        <div class="small-box" style="background-color: #0079FB;">
+        <div class="small-box" style="background-color: #0c2461">
           <div class="inner text-white">
-            <h3><?php echo $isiPen[0]; ?> Data</h3>
+            <h4 class="font-weight-bold"><?php echo $isiPen[0]; ?> Data</h4>
             <p>Penilaian</p>
           </div>
           <div class="icon">

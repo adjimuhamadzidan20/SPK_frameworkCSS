@@ -115,35 +115,40 @@
         <div class="card">
           <!-- /.card-header -->
           <div class="card-body">
-            <table id="example2" class="table table-bordered">
-              <thead>
-                <tr class="text-center">
-                  <th>ID Alternatif</th>
-                  <th>Nama Alternatif</th>
-                  <th>Jenis Framework</th>
-                  <th>Opsi</th>
-                </tr>
-              </thead>
-              <tbody>
-                <?php foreach ($hasil as $items) { ?>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
                   <tr class="text-center">
-                    <td><?= $items['ID_Alternatif'];?></td>
-                    <td><?= $items['Nama_Framework'];?></td>
-                    <td><?= $items['Jenis_Framework'];?></td>
-                    <td>
-                      <center>
-                        <a href="index.php?page=edit_alter&id=<?= $items['ID_Alternatif']; ?>">
-                          <button type="button" class="btn btn-primary"><i class="far fa-edit"></i> Edit</button>
-                        </a>
-                        <a href="index.php?page=delete_alter&id=<?= $items['ID_Alternatif']; ?>">
-                          <button type="button" class="btn btn-primary" onclick="return confirm('Hapus alternatif?');"><i class="far fa-trash-alt"></i> Delete</button>
-                        </a>
-                      </center>
-                    </td>
+                    <th class="text-nowrap">Kode Alternatif</th>
+                    <th class="text-nowrap">Nama Alternatif</th>
+                    <th class="text-nowrap">Jenis Framework</th>
+                    <th class="text-nowrap">Opsi</th>
                   </tr>
-                <?php } ?>
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  <?php 
+                    $no = 1;
+                    foreach ($hasil as $items) { 
+                  ?>
+                    <tr class="text-center">
+                      <td class="text-nowrap"><?= 'A'. $no++; ?></td>
+                      <td class="text-nowrap"><?= $items['Nama_Framework'];?></td>
+                      <td class="text-nowrap"><?= $items['Jenis_Framework'];?></td>
+                      <td class="text-nowrap">
+                        <center>
+                          <a href="index.php?page=edit_alter&id=<?= $items['ID_Alternatif']; ?>">
+                            <button type="button" class="btn btn-primary"><i class="far fa-edit"></i> Edit</button>
+                          </a>
+                          <a href="index.php?page=delete_alter&id=<?= $items['ID_Alternatif']; ?>">
+                            <button type="button" class="btn btn-primary" onclick="return confirm('Hapus alternatif?');"><i class="far fa-trash-alt"></i> Delete</button>
+                          </a>
+                        </center>
+                      </td>
+                    </tr>
+                  <?php } ?>
+                </tbody>
+              </table>
+            </div>
           </div>
           <!-- /.card-body -->
         </div>

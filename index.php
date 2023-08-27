@@ -44,6 +44,31 @@
   <link rel="stylesheet" href="assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
   <link rel="stylesheet" href="assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 
+  <style type="text/css">
+    .btn-primary {
+      background-color: #0c2461;
+      border-color: #0c2461;
+    }
+
+    .btn-primary:hover {
+      background-color: green;
+       border-color: green;
+    } 
+
+    .dataTables_paginate .paginate_button.page-item.active a {
+      background-color: #0c2461;
+      border-color: #0c2461;
+    }
+
+    .dataTables_paginate .paginate_button.page-item:not(.active) a {
+      color: #0c2461;
+    }  
+
+    a {
+       color: #0c2461;
+    }
+  </style>
+
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -63,7 +88,7 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-light-primary elevation-4" style="background-color: #0067D7;">
+  <aside class="main-sidebar elevation-4" style="background-color: #0c2461;">
     <!-- Brand Logo -->
     <a href="index.php" class="brand-link text-center">
       <span class="brand-text text-white">SPK Framework CSS</span>
@@ -167,7 +192,7 @@
   <footer class="main-footer">
     Created by <strong>Adji Muhamad Zidan</strong> - 2023.
     <div class="float-right d-none d-sm-inline-block">
-      <b><a href="#">AdminLTE.io</a> - Version</b> 3.2.0
+      SPK Framework CSS
     </div>
   </footer>
 

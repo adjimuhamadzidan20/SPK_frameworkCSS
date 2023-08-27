@@ -179,49 +179,52 @@
         <div class="card">
           <!-- /.card-header -->
           <div class="card-body">
-            <table id="example2" class="table table-bordered">
-              <thead>
-                <tr class="text-center">
-                  <th>ID</th>
-                  <th>Alternatif</th>
-                  <th>K1</th>
-                  <th>K2</th>
-                  <th>K3</th>
-                  <th>K4</th>
-                  <th>K5</th>
-                  <th>K6</th>
-                  <th>Opsi</th>
-                </tr>
-              </thead>
-              <tbody>
-                <?php  
-                  foreach ($penilaian as $items) {
-                ?>
-                  <tr>
-                    <td class="text-center"><?= $items['ID_Penilaian']; ?></td>
-                    <td class="text-center"><?= $items['Alternatif']; ?></td>
-                    <td class="text-center"><?= $items['Mudah_Dipelajari']; ?></td>
-                    <td class="text-center"><?= $items['Banyak_Digunakan']; ?></td>
-                    <td class="text-center"><?= $items['Popular']; ?></td>
-                    <td class="text-center"><?= $items['Sumber_Belajar_Luas']; ?></td>
-                    <td class="text-center"><?= $items['Ringan_Digunakan']; ?></td>
-                    <td class="text-center"><?= $items['Proses_Instalasi_Mudah']; ?></td>
-                    <td>
-                      <center>
-                        <a href="index.php?page=edit_penilaian&id=<?= $items['ID_Penilaian']; ?>">
-                          <button type="button" class="btn btn-primary"><i class="far fa-edit"></i> Edit</button>
-                        </a>
-                        <a href="index.php?page=delete_penilaian&id=<?= $items['ID_Penilaian']; ?>">
-                          <button type="button" class="btn btn-primary" onclick="return confirm('Hapus Penilaian Kriteria?');"><i class="far fa-trash-alt"></i> Delete</button>
-                        </a>
-                      </center>
-                    </td>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr class="text-center">
+                    <th class="text-nowrap">Kode</th>
+                    <th class="text-nowrap">Alternatif</th>
+                    <th class="text-nowrap">K1</th>
+                    <th class="text-nowrap">K2</th>
+                    <th class="text-nowrap">K3</th>
+                    <th class="text-nowrap">K4</th>
+                    <th class="text-nowrap">K5</th>
+                    <th class="text-nowrap">K6</th>
+                    <th class="text-nowrap">Opsi</th>
                   </tr>
-                <?php  
-                  }
-                ?>
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  <?php  
+                    $no = 1;
+                    foreach ($penilaian as $items) {
+                  ?>
+                    <tr>
+                      <td class="text-center text-nowrap"><?= 'A'. $no++; ?></td>
+                      <td class="text-center text-nowrap"><?= $items['Alternatif']; ?></td>
+                      <td class="text-center text-nowrap"><?= $items['Mudah_Dipelajari']; ?></td>
+                      <td class="text-center text-nowrap"><?= $items['Banyak_Digunakan']; ?></td>
+                      <td class="text-center text-nowrap"><?= $items['Popular']; ?></td>
+                      <td class="text-center text-nowrap"><?= $items['Sumber_Belajar_Luas']; ?></td>
+                      <td class="text-center text-nowrap"><?= $items['Ringan_Digunakan']; ?></td>
+                      <td class="text-center text-nowrap"><?= $items['Proses_Instalasi_Mudah']; ?></td>
+                      <td class="text-nowrap">
+                        <center>
+                          <a href="index.php?page=edit_penilaian&id=<?= $items['ID_Penilaian']; ?>">
+                            <button type="button" class="btn btn-primary"><i class="far fa-edit"></i> Edit</button>
+                          </a>
+                          <a href="index.php?page=delete_penilaian&id=<?= $items['ID_Penilaian']; ?>">
+                            <button type="button" class="btn btn-primary" onclick="return confirm('Hapus Penilaian Kriteria?');"><i class="far fa-trash-alt"></i> Delete</button>
+                          </a>
+                        </center>
+                      </td>
+                    </tr>
+                  <?php  
+                    }
+                  ?>
+                </tbody>
+              </table>
+            </div>
           </div>
           <!-- /.card-body -->
         </div>

@@ -52,7 +52,7 @@
       <!-- /.card-header -->
       <div class="card-body">
         <form role="form" method="post">
-		      <div class="form-group">
+		      <div class="form-group" hidden="hidden">
 		        <label>ID Alternatif</label>
 		        <input class="form-control" style="width: 100%;" name="alternatif" value="<?= $hasil['ID_Alternatif'];?>" disabled></input>
 		      </div>

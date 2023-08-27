@@ -61,6 +61,22 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
 
+  <style>
+     .btn-primary {
+        background-color: #0c2461;
+        border-color: #0c2461;
+      }
+
+      .btn-primary:hover {
+        background-color: green;
+        border-color: green;
+      } 
+
+      a {
+        color: #0c2461;
+      }
+  </style>
+
 </head>
 <body class="hold-transition register-page">
 <div class="register-box">
